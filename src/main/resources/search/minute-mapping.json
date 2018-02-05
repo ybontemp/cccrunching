@@ -1,0 +1,69 @@
+{
+  "mappings": {
+    "meetingminute": {
+        "id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "items": {
+          "properties": {
+            "decision": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "discussion": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "title": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          },
+          "_parent": "meetingminute"
+        },
+        "meetingDate": {
+          "properties": {
+            "day": {
+              "type": "long"
+            },
+            "month": {
+              "type": "long"
+            },
+            "year": {
+              "type": "long"
+            }
+          }
+        },
+        "title": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+    }
+  }
+}
